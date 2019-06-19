@@ -10,8 +10,6 @@ COPY . .
 RUN python setup.py build \
   && python setup.py install
 
-COPY locustfile.py /locustfile.py
-
 EXPOSE 8089 5557 5558
 
 ENTRYPOINT ["locust"]
